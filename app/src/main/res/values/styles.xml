@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- 標題 -->
+    <style name="Style_TextLabel">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/dark_blue</item>
+        <item name="android:fontFamily">@font/gensenrounded_b</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineHeight">24sp</item>
+    </style>
+
+    <!-- 列表標題 -->
+    <style name="Style_listLabel">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/gensenrounded_m</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineHeight">28sp</item>
+    </style>
+
+    <!-- 列表文字 -->
+    <style name="Style_listText">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/dark_blue</item>
+        <item name="android:fontFamily">@font/gensenrounded_r</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineHeight">24sp</item>
+    </style>
+
+    <!-- 輸入框 -->
+    <style name="Style_EditInput">
+        <item name="android:padding">20dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/gensenrounded_m</item>
+        <item name="android:textColor">@color/dark_blue</item>
+        <item name="android:background">@drawable/edit_text_background</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineHeight">24sp</item>
+    </style>
+
+    <style name="Style_EditInput_small">
+        <item name="android:padding">14dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/gensenrounded_m</item>
+        <item name="android:textColor">@color/dark_blue</item>
+        <item name="android:background">@drawable/edit_text_background_small</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineHeight">18sp</item>
+    </style>
+
+    <!-- 按鈕 -->
+    <style name="Style_Button_rectangle">
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/gensenrounded_b</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/rectangle_button_background_db</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineHeight">24sp</item>
+    </style>
+
+    <style name="Style_Button_rectangle_small">
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/gensenrounded_b</item>
+        <item name="android:textColor">@color/dark_blue</item>
+        <item name="android:background">@drawable/rectangle_button_background_lb</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineHeight">22sp</item>
+    </style>
+
+    <style name="Style_Button_circle">
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/gensenrounded_b</item>
+        <item name="android:textColor">@color/dark_blue</item>
+        <item name="android:background">@drawable/circle_button_background</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineHeight">24sp</item>
+    </style>
+
+    <style name="Style_Button_circle_small">
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/gensenrounded_r</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/circle_button_background_small</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineHeight">24sp</item>
+    </style>
+
+    <!-- TabLayout -->
+    <style name="CustomTabLayoutStyle" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabTextAppearance">@style/CustomTabTextAppearance</item>
+        <item name="tabSelectedTextColor">@color/dark_blue</item> <!-- 選中的文字顏色 -->
+        <item name="tabIndicatorColor">@color/dark_blue</item> <!-- 底線顏色 -->
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="CustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/gensenrounded_m</item>
+        <item name="android:textColor">@color/black</item> <!-- 預設文字顏色 -->
+        <item name="android:includeFontPadding">false</item>
+    </style>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- 設定權限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TripBoxie"
+        tools:targetApi="31">
+        <activity
+            android:name=".DayPlanActivity"
+            android:exported="false" /> <!--透過願望清單新增DayActivity-->
+        <activity
+            android:name=".NewDayPlanActivity"
+            android:exported="false" /> <!--新增DayActivity-->
+        <activity
+            android:name=".WebActivity"
+            android:exported="false" /> <!--網頁顯示-->
+        <activity
+            android:name=".NewActivity"
+            android:exported="false" /> <!--願望清單新增畫面 -->
+        <activity
+            android:name=".PlanActivity"
+            android:exported="false" /> <!--個別plan顯示畫面-->
+        <activity
+            android:name=".WishActivity"
+            android:exported="false" /> <!--願望清單畫面-->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" /> <!--主畫面（顯示plan）-->
+        <activity
+            android:name=".StartActivity"
+            android:exported="true"> <!--登入介面 -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- 設定google map API -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${GOOGLE_MAPS_API_KEY}" />
+    </application>
+
+</manifest>

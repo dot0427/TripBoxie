@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/textView_location"
+            style="@style/Style_listLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="地點"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_date"
+            style="@style/Style_TextLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="地點"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_location"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_edit_plan"
+            style="@style/Style_Button_rectangle"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="編輯"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_date"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_del_plan"
+            style="@style/Style_Button_rectangle"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="刪除"
+            app:layout_constraintStart_toEndOf="@id/button_edit_plan"
+            app:layout_constraintTop_toBottomOf="@+id/textView_date"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_back_plan"
+            style="@style/Style_Button_rectangle_small"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            android:text="返回"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button_del_plan"
+            app:layout_constraintTop_toBottomOf="@+id/textView_date"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

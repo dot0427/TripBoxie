@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/list_background"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="8dp"
+        style="@style/Style_listLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp" />
+
+    <!-- 占滿剩餘空間 -->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/text_startDate"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="24dp"
+        style="@style/Style_listText"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:id="@+id/text_sym"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        style="@style/Style_listText"
+        android:text="~"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:id="@+id/text_endDate"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        style="@style/Style_listText"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp" />
+
+</LinearLayout>
